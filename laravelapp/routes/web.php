@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::get('hello/{id?}/{pass?}','HelloController@index');
 
+Route::get('index', 'JissyuController@index');
