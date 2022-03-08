@@ -14,8 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-/* 3/01 p53 */
 Route::get('hello','HelloController@index');
+Route::post('hello','HelloController@post');
 
 /* 実習2 */
 Route::get('jissyu2', 'JissyuController@index');
+/* 実習3 */
+Route::get('jissyu3', 'Jissyu3_1Controller@index');
+Route::post('jissyu3', 'Jissyu3_1Controller@post');
+/* 実習3_2 */
+Route::get('jissyu3_2', 'Jissyu3_2Controller@index');
+Route::post('jissyu3_2', 'Jissyu3_2Controller@post');
