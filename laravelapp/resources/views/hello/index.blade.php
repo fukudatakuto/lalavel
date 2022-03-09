@@ -9,9 +9,8 @@
 
 @section('content')
     <p>ここが本文のコンテンツです</p>
-    <p>Contoroller value<br>'message' = {{$message}}</p>
-    <p>ViewComposter value<br>'view_message' = {{$view_message}}
-        </p>
+    <p>これは、<middleware>google.com</middleware>へのリンクです。</p>
+    <p>これは、<middleware>yahoo.co.jp</middleware>へのリンクです。<mo</p>
 @endsection
 @section('footer')
 copyright 2020 ruyano.
