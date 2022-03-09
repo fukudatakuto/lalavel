@@ -1,0 +1,16 @@
+@startuml 履歴
+    actor ユーザ
+    boundary ブラウザ
+    control web.php
+    control Jissyu3_3Controller
+    boundary Jissyu3_3.input.blade.php
+    boundary layouts.jissyu.blade.php
+        ユーザ -> ブラウザ :該当ページをリクエスト[/jissyu4]
+        ブラウザ -> web.php :GET[/jissyu5]
+        web.php -> Jissyu3_3Controller :@index
+        Jissyu3_3Controller -> Jissyu3_3.input.blade.php
+        Jissyu3_3.input.blade.php -> layouts.jissyu.blade.php :@extends
+        layouts.jissyu.blade.php --> Jissyu3_3.input.blade.php
+@enduml
+
+/'alt + D でUML実行'/

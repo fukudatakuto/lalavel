@@ -11,13 +11,13 @@
     <h1>Blade/Index</h1>
     <ol>
     @foreach($data as $item)
-    @___(16)___(___(17)___)
+    @if($loop->first)
     <p>データ一覧</p>
-    @___(18)___
+    @endif
     <li>No,{{$loop->iteration}}.{{$item}}</li>
-    @___(19)___(___(20)___)
+    @if($loop->last)
     <p>ここまで出力</p>
-    @empty
+    @endif
     @endforeach
  </body>
 </html>

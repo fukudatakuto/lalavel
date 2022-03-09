@@ -21,7 +21,7 @@ class Jissyu3_2Controller extends Controller
             'mail'=>$request->mail,
             'age'=>$request->age
         ];
-        return view('jissyu3_2.output', $data);
+        return view('jissyu3_2.output',['data'=>$data]);
     }
 
 }
