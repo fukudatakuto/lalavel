@@ -28,3 +28,6 @@ Route::get('jissyu3_2', 'Jissyu3_2Controller@index');
 Route::post('jissyu3_2', 'Jissyu3_2Controller@post');
 /* 実習3_3 */
 Route::get('jissyu5', 'Jissyu3_3Controller@index');
+/* 実習4_1 */
+Route::get('jissyu6', 'Jissyu4_1Controller@index');
+Route::post('jissyu6', 'Jissyu4_1Controller@post');
