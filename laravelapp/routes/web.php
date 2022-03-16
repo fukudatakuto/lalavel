@@ -18,6 +18,16 @@ Route::get('/', function () {
 Route::get('hello','HelloController@index');
 Route::post('hello','HelloController@post');
 
+Route::get('hello/add','HelloController@add');
+Route::post('hello/add','HelloController@create');
+
+Route::get('hello/edit','HelloController@edit');
+Route::post('hello/edit','HelloController@update');
+
+Route::get('hello/del','HelloController@del');
+Route::post('hello/del','HelloController@remove');
+
+Route::get('hello/show','HelloController@show');
 /* 実習2 */
 Route::get('jissyu2', 'JissyuController@index');
 /* 実習3 */
@@ -31,3 +41,6 @@ Route::get('jissyu5', 'Jissyu3_3Controller@index');
 /* 実習4_1 */
 Route::get('jissyu6', 'Jissyu4_1Controller@index');
 Route::post('jissyu6', 'Jissyu4_1Controller@post');
+/* 実習5_1 */
+Route::get('jissyu10', 'Jissyu5_1Controller@index');
+Route::get('jissyu10', 'Jissyu5_1Controller@show');
