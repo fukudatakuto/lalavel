@@ -33,6 +33,12 @@ Route::get('person','PersonController@index');
 
 Route::get('person/find','PersonController@find');
 Route::post('person/find','PersonController@search');
+
+Route::get('person/add','PersonController@add');
+Route::post('person/add','PersonController@create');
+
+Route::get('person/edit','PersonController@edit');
+Route::post('person/edit','PersonController@update');
 /* 実習2 */
 Route::get('jissyu2', 'JissyuController@index');
 /* 実習3 */
@@ -67,3 +73,8 @@ Route::get('jissyu12/edit', 'Jissyu5_3Controller@edit');
 Route::post('jissyu12/update', 'Jissyu5_3Controller@update');
 Route::get('jissyu12/del', 'Jissyu5_3Controller@del');
 Route::post('jissyu12/remove', 'Jissyu5_3Controller@remove');
+/* 効果測定1_1 */
+Route::get('kouka1_1','Kouka1_1Controller@index');
+/* 効果測定1_2 */
+Route::get('kouka1_2', 'Kouka1_2Controller@index');
+Route::post('kouka1_2', 'Kouka1_2Controller@post');
