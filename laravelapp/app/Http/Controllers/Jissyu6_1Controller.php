@@ -9,17 +9,14 @@ class Jissyu6_1Controller extends Controller
 {
     public function index(Request $request)
     {
-        $items = DB::table('people')->get();
-        $param = [
-            'name'=>$request->name,
-            'mail'=>$request->mail,
-            'age'=>$request->age,
-    ];;
-        return view('jissyu6_1.index', ['items'=>$items]);
+        $items = Person::all();
+        $param = ['input' => '','items' => $items];
+        return view('jissyu6_1.index', $param);
     }
     public function find(Request $request)
     {
-        $item = DB::table('people')->where('id',$id)->first();
+        //$item = Person::find($request->input);
+        $item = Person::where('name',$request->input)->first();
         return view('jissyu6_1.show', ['item' => $item]);
     }
 }
