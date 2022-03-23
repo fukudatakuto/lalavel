@@ -39,6 +39,11 @@ Route::post('person/add','PersonController@create');
 
 Route::get('person/edit','PersonController@edit');
 Route::post('person/edit','PersonController@update');
+
+Route::get('board','BoardController@index');
+
+Route::get('board/add','BoardController@add');
+Route::post('board/add','BoardController@create');
 /* 実習2 */
 Route::get('jissyu2', 'JissyuController@index');
 /* 実習3 */
@@ -73,6 +78,9 @@ Route::get('jissyu12/edit', 'Jissyu5_3Controller@edit');
 Route::post('jissyu12/update', 'Jissyu5_3Controller@update');
 Route::get('jissyu12/del', 'Jissyu5_3Controller@del');
 Route::post('jissyu12/remove', 'Jissyu5_3Controller@remove');
+/* 実習6_1 */
+Route::get('jissyu13', 'Jissyu6_1Controller@index');
+Route::post('jissyu13/find', 'Jissyu6_1Controller@show');
 /* 効果測定1_1 */
 Route::get('kouka1_1','Kouka1_1Controller@index');
 /* 効果測定1_2 */
