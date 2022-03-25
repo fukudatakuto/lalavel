@@ -51,6 +51,9 @@ Route::get('hello/rest','HelloController@rest');
 
 Route::get('hello/session','HelloController@ses_get');
 Route::post('hello/session','HelloController@ses_put');
+
+Route::get('hello/auth','PersonController@getAuth');
+Route::post('hello/auth','PersonController@postAuth');
 /* 実習2 */
 Route::get('jissyu2', 'JissyuController@index');
 /* 実習3 */
@@ -93,3 +96,16 @@ Route::get('kouka1_1','Kouka1_1Controller@index');
 /* 効果測定1_2 */
 Route::get('kouka1_2', 'Kouka1_2Controller@index');
 Route::post('kouka1_2', 'Kouka1_2Controller@post');
+/* 効果測定2_1 */
+Route::get('kouka2_1', 'Kouka2_1Controller@index');
+Route::post('kouka2_1/find', 'Kouka2_1Controller@find');
+/* 効果測定2_2 */
+Route::get('kouka2_2', 'Kouka2_2Controller@index');
+Route::post('kouka2_2/find', 'Kouka2_2Controller@find');
+Route::get('kouka2_2/show', 'Kouka2_2Controller@show');
+Route::get('kouka2_2/add', 'Kouka2_2Controller@add');
+Route::post('kouka2_2/create', 'Kouka2_2Controller@create');
+Route::get('kouka2_2/edit', 'Kouka2_2Controller@edit');
+Route::post('kouka2_2/update', 'Kouka2_2Controller@update');
+Route::get('kouka2_2/del', 'Kouka2_2Controller@del');
+Route::post('kouka2_2/remove', 'Kouka2_2Controller@remove');

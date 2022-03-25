@@ -1,5 +1,7 @@
 <html>
 <head>
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>@yield('title')</title>
     <style>
     th {background:#999; color:fff; padding:5px 10px;}
